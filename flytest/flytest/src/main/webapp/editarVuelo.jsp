@@ -21,6 +21,10 @@
                 <label>Fecha (YYYY-MM-DD):</label>
                 <input type="date" class="form-control" name="fecha" value="${vuelo.fecha}" required />
             </div>
+            <div class="form-group">
+                <label>Cantidad Asientos:</label>
+                <input type="text" class="form-control" name="Cantidad Asientos" value="${vuelo.CantidadAsientos}" required />
+            </div>
             <button type="submit" class="btn btn-primary">Actualizar Vuelo</button>
         </form>
     </div>

@@ -38,6 +38,9 @@ public class AdministradorVuelos {
             vuelo.setSalida(salida);
             vuelo.setLlegada(llegada);
             vuelo.setFecha(fecha);
+
+            // Actualizar la cantidad de asientos
+            vuelo.actualizarCantidadAsientos(nuevaCantidadAsientos);
         }
     }
 }

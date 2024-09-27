@@ -21,6 +21,23 @@ public class Vuelo {
         }
     }
 
+    // Nuevo método para actualizar la cantidad de asientos
+    public void actualizarCantidadAsientos(int nuevaCantidadAsientos) {
+        int cantidadActualAsientos = this.asientos.size();
+
+        if (nuevaCantidadAsientos > cantidadActualAsientos) {
+            // Agregar más asientos
+            for (int i = cantidadActualAsientos + 1; i <= nuevaCantidadAsientos; i++) {
+                asientos.add(new Asiento(i));
+            }
+        } else if (nuevaCantidadAsientos < cantidadActualAsientos) {
+            // Eliminar asientos desde el final
+            for (int i = cantidadActualAsientos; i > nuevaCantidadAsientos; i--) {
+                asientos.removeLast();
+            }
+        }
+    }
+
     // Getters y Setters
     public String getCodigoVuelo() { return codigoVuelo; }
     public String getSalida() { return salida; }
