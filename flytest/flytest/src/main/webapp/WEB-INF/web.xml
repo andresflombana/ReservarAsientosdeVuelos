@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee                               http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <display-name>FlyTest</display-name>
+    <!-- Servlet 1: CrearVueloServlet -->
+    <servlet>
+        <servlet-name>CrearVueloServlet</servlet-name>
+        <servlet-class>servlets.CrearVueloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CrearVueloServlet</servlet-name>
+        <url-pattern>/CrearVueloServlet</url-pattern>
+    </servlet-mapping>
+    <!-- Servlet 2: VerAsientosServlet -->
+    <servlet>
+        <servlet-name>VerAsientosServlet</servlet-name>
+        <servlet-class>servlets.VerAsientosServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VerAsientosServlet</servlet-name>
+        <url-pattern>/VerAsientosServlet</url-pattern>
+    </servlet-mapping>
+    <!-- Servlet 3: ListarVuelosServlet -->
+    <servlet>
+        <servlet-name>ListarVuelosServlet</servlet-name>
+        <servlet-class>servlets.ListarVuelosServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListarVuelosServlet</servlet-name>
+        <url-pattern>/ListarVuelosServlet</url-pattern>
+    </servlet-mapping>
+    <!-- Servlet 4: ActualizarVueloServlet -->
+    <servlet>
+        <servlet-name>ActualizarVueloServlet</servlet-name>
+        <servlet-class>servlets.ActualizarVueloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ActualizarVueloServlet</servlet-name>
+        <url-pattern>/ActualizarVueloServlet</url-pattern>
+    </servlet-mapping>
+    <!-- Servlet 5: EliminarVueloServlet -->
+    <servlet>
+        <servlet-name>EliminarVueloServlet</servlet-name>
+        <servlet-class>servlets.EliminarVueloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EliminarVueloServlet</servlet-name>
+        <url-pattern>/EliminarVueloServlet</url-pattern>
+    </servlet-mapping>
+    <!-- Servlet 6: ReservarAsientoServlet -->
+    <servlet>
+        <servlet-name>ReservarAsientoServlet</servlet-name>
+        <servlet-class>servlets.ReservarAsientoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReservarAsientoServlet</servlet-name>
+        <url-pattern>/ReservarAsientoServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
